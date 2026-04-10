@@ -35,10 +35,23 @@ using namespace std;
 
 // _________________________________________________________
 
+// int main() {
+//     int num = 50; 
+//     int* ptr = &num;
+//     *ptr = 75;  
+
+
+//     cout << "Originial value: " << num << endl; 
+//     cout << "Dereferenced value: " << *ptr << endl; 
+// }
+
+// _________________________________________________________
+
 int main() {
-    int num = 50; 
-    int* ptr = &num; 
+char favLetter = 'I';  
+char* ptr = &favLetter; 
 
+cout << "Favorite Letter:" << favLetter << endl;  
+cout << "New Letter: " << (void)*ptr << endl; 
 
-    cout << "Originial value: " << num << endl; 
 }
